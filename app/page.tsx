@@ -77,7 +77,7 @@ const questions: Question[] = [
     answers: [
       { text: "Megnézem, mi az újdonság vagy a napi ajánlat", personality: "explorer" },
       { text: "A megszokott kedvencemet rendelem", personality: "classic" },
-      { text: "Angol teát kérek, cukor nélkül keserűn", personality: "zen" },
+      { text: "Angol teát kérek, cukor nélkül", personality: "zen" },
       { text: "Dupla espressót – azonnal", personality: "owl" },
     ],
   },
