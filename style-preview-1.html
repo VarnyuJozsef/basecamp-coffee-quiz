@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stílus 1 – Játékos & Színes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .badge {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #fda085;
+    font-weight: 900;
+    font-size: 13px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .card {
+    background: white;
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    position: relative;
+  }
+  .progress {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .progress-dot {
+    height: 8px;
+    border-radius: 4px;
+    flex: 1;
+    background: #f0f0f0;
+  }
+  .progress-dot.active { background: #fda085; }
+  .question {
+    font-size: 22px;
+    font-weight: 900;
+    color: #333;
+    margin-bottom: 24px;
+    line-height: 1.3;
+  }
+  .emoji { font-size: 40px; margin-bottom: 16px; display: block; }
+  .option {
+    display: block;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    border: 3px solid #f0f0f0;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+  }
+  .option:hover { border-color: #fda085; color: #fda085; background: #fff5f0; }
+  .option.selected { border-color: #fda085; background: #fda085; color: white; }
+  .footer { text-align: center; margin-top: 20px; color: #aaa; font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="badge">STILUS 1 – Játékos & Színes</div>
+<div class="card">
+  <div class="progress">
+    <div class="progress-dot active"></div>
+    <div class="progress-dot active"></div>
+    <div class="progress-dot"></div>
+    <div class="progress-dot"></div>
+    <div class="progress-dot"></div>
+  </div>
+  <span class="emoji">☀️</span>
+  <div class="question">Milyen a tökéletes hétvégéd?</div>
+  <button class="option selected">🏕️ Kirándulás és kaland a természetben</button>
+  <button class="option">🛋️ Otthon, jó könyvvel és kávéval</button>
+  <button class="option">🎉 Barátokkal, valami szórakoztatón</button>
+  <button class="option">🧘 Csend és feltöltődés</button>
+  <div class="footer">Kérdés 2 / 6</div>
+</div>
+</body>
+</html>

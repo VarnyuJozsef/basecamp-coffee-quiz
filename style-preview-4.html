@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stílus 4 – Meleg & Otthonos</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Source+Sans+3:wght@400;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #f5ede3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .badge {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6b4226;
+    color: #f5ede3;
+    font-size: 12px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .card {
+    background: #fff8f2;
+    border-radius: 20px;
+    padding: 44px;
+    max-width: 520px;
+    width: 100%;
+    box-shadow: 0 8px 40px rgba(107, 66, 38, 0.12);
+    border: 1px solid #ecddd0;
+  }
+  .brand {
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    color: #b07050;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  .progress {
+    height: 4px;
+    background: #ecddd0;
+    border-radius: 2px;
+    margin-bottom: 32px;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 33%;
+    background: linear-gradient(90deg, #c47d4e, #e8a87c);
+    border-radius: 2px;
+  }
+  .question {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3d2314;
+    margin-bottom: 28px;
+    line-height: 1.4;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 10px;
+    border: 2px solid #ecddd0;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #5a3a22;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+  }
+  .option:hover { border-color: #c47d4e; background: #fff5ee; }
+  .option.selected { border-color: #c47d4e; background: linear-gradient(135deg, #f9ece1, #fdf4ec); color: #3d2314; font-weight: 600; }
+  .icon { font-size: 20px; }
+  .footer { text-align: center; margin-top: 24px; color: #b07050; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="badge">STILUS 4 – Meleg & Otthonos</div>
+<div class="card">
+  <div class="brand">Basecamp Coffee</div>
+  <div class="progress"><div class="progress-fill"></div></div>
+  <div class="question">Milyen a tökéletes hétvégéd?</div>
+  <button class="option"><span class="icon">🏕️</span> Kirándulás és kaland a természetben</button>
+  <button class="option selected"><span class="icon">📖</span> Otthon, jó könyvvel és kávéval</button>
+  <button class="option"><span class="icon">🎉</span> Barátokkal, valami szórakoztatón</button>
+  <button class="option"><span class="icon">🧘</span> Csend és feltöltődés</button>
+  <div class="footer">2. kérdés a 6-ból</div>
+</div>
+</body>
+</html>

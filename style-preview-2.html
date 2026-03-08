@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stílus 2 – Minimál & Tiszta</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f9f9f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .badge {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #111;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .card {
+    background: white;
+    border-radius: 4px;
+    padding: 56px;
+    max-width: 520px;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+  }
+  .label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 32px;
+  }
+  .question {
+    font-size: 24px;
+    font-weight: 600;
+    color: #111;
+    margin-bottom: 40px;
+    line-height: 1.4;
+  }
+  .option {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    padding: 18px 0;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 15px;
+    color: #444;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    transition: color 0.15s;
+  }
+  .option:hover { color: #111; }
+  .option.selected { color: #111; font-weight: 600; }
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    flex-shrink: 0;
+    transition: all 0.15s;
+  }
+  .option.selected .dot { background: #111; border-color: #111; }
+  .progress {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .progress-bar {
+    flex: 1;
+    height: 2px;
+    background: #f0f0f0;
+    border-radius: 1px;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 33%;
+    background: #111;
+    border-radius: 1px;
+  }
+  .progress-text { font-size: 13px; color: #999; }
+</style>
+</head>
+<body>
+<div class="badge">STILUS 2 – Minimál & Tiszta</div>
+<div class="card">
+  <div class="label">Kávé Személyiség Kvíz</div>
+  <div class="question">Milyen a tökéletes hétvégéd?</div>
+  <button class="option"><div class="dot"></div> Kirándulás és kaland a természetben</button>
+  <button class="option selected"><div class="dot"></div> Otthon, jó könyvvel és kávéval</button>
+  <button class="option"><div class="dot"></div> Barátokkal, valami szórakoztatón</button>
+  <button class="option"><div class="dot"></div> Csend és feltöltődés</button>
+  <div class="progress">
+    <span class="progress-text">2 / 6</span>
+    <div class="progress-bar"><div class="progress-fill"></div></div>
+  </div>
+</div>
+</body>
+</html>

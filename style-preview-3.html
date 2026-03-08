@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stílus 3 – Félkövér & Drámai</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #0a0a0a;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .badge {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ff3c3c;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .card {
+    max-width: 540px;
+    width: 100%;
+  }
+  .progress {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 40px;
+  }
+  .progress-seg {
+    height: 3px;
+    flex: 1;
+    background: #222;
+    border-radius: 2px;
+  }
+  .progress-seg.active { background: #ff3c3c; }
+  .question {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+  .option {
+    display: block;
+    width: 100%;
+    padding: 20px 24px;
+    margin-bottom: 10px;
+    border: 1px solid #222;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #888;
+    background: #111;
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: all 0.15s;
+  }
+  .option:hover { border-color: #ff3c3c; color: #fff; }
+  .option.selected { border-color: #ff3c3c; background: #ff3c3c; color: #fff; }
+  .footer { margin-top: 28px; color: #444; font-size: 13px; text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="badge">STILUS 3 – Félkövér & Drámai</div>
+<div class="card">
+  <div class="progress">
+    <div class="progress-seg active"></div>
+    <div class="progress-seg active"></div>
+    <div class="progress-seg"></div>
+    <div class="progress-seg"></div>
+    <div class="progress-seg"></div>
+    <div class="progress-seg"></div>
+  </div>
+  <div class="question">Milyen a tökéletes hétvégéd?</div>
+  <button class="option selected">Kirándulás és kaland</button>
+  <button class="option">Otthon, könyvvel és kávéval</button>
+  <button class="option">Barátok és szórakozás</button>
+  <button class="option">Csend és feltöltődés</button>
+  <div class="footer">2 / 6 kérdés</div>
+</div>
+</body>
+</html>
